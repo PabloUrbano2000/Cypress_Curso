@@ -1,0 +1,60 @@
+Bienvenido al curso de Cypress.
+
+
+1. npm init
+2. npm install cypress --> instalación
+
+-- en caso no deja
+2.2 npm install -g npx
+2.1 npx cypress install --force --> forzar la instalación
+
+-- sino seguir desde aca
+3. node_modules\.bin\cypress open
+-- ó
+3.1 npx cypress open
+
+INSTALACION DE PLUGINS
+Funcionamiento de TAB
+- npm install -D cypress-plugin-tab
+
+Funcionamiento de XPATH
+- npm install -D cypress-xpath
+
+SUBIR ARCHIVOS
+- npm install --save-dev cypress-file-upload
+
+MOUSE EVENTS DRAG AND DROP
+- npm install --save-dev @4tw/cypress-drag-drop
+
+LANZAR DESDE CONSOLA LAS PRUEBAS
+- node_modules\.bin\cypress run
+- npx cypress run
+
+COMANDOS: 
+npx cypress run --headed    --> CORRE TODOS LOS TESTS DESDE EL NAVEGADOR
+npx cypress run --browser chrome --> CORRE TODOS LOS TESTS DESDE CHROME
+
+// CON AMBOS SE CREAN VIDEOS Y SCREENSHOTS (SI EL ARCHIVO TIENE CY.SCREENSHOT())
+npx cypress run --spec "cypress\integration\Seccion-2\Asserts.js" --> CORRE TEST DE UN FOLDER
+npx cypress run --spec "cypress\integration\Seccion-1\*" --> CORRE TODOS LOS TEST DE CIERTA CARPETA
+
+// SELECTORES XPATH
+SE ESCRIBE ASI -->  //input[@type='text' and @id='userName']
+                    //input[@type='text' or @id='userName']
+                    //input[@id='userName' and @class='mr-sm-2 form-control']
+
+// XPATH POR EL TEXTO
+                    //div[text()='Text Box']
+                    //span[text()='Dynamic Properties']
+// XPATH QUE CONTENGA CIERTO TEXTO
+                    //span[contains(text(),'Properties')]
+
+// MOCKAROO GENERADOR DE OBJETOS
+https://mockaroo.com/
+
+// CONVERTIDOR DE EXCEL A JSON
+https://beautifytools.com/csv-to-json-converter.php
+
+
+// INSTALACION CUCUMBER EN Cypress
+npm install --save-dev cypress-cucumber-preprocessor

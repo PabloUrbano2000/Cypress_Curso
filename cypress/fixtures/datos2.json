@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Pablo",
+        "email": "hello@mail.io",
+        "dir1": "Los Olivos 3434",
+        "dir2": "Direccion 34554"
+    },
+    {
+        "nombre": "Pedro",
+        "email": "hello@perro.io",
+        "dir1": "Los Olivos",
+        "dir2": "Direccion fdfd"
+    },
+    {
+        "nombre": "Paolito",
+        "email": "bye@cypress.io",
+        "dir1": "Los Olivos 3434",
+        "dir2": "Direccion 2"
+    }
+]

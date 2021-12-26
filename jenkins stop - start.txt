@@ -1,0 +1,19 @@
+C:\cmder
+λ cd ..
+
+C:\
+λ cd "Program Files"
+
+C:\Program Files
+λ cd Jenkins\
+
+C:\Program Files\Jenkins
+λ jenkins stop
+2021-12-26 03:36:39,170 INFO  - Stopping the service with id 'jenkins'
+
+C:\Program Files\Jenkins
+λ jenkins start
+2021-12-26 03:37:04,012 INFO  - Starting the service with id 'jenkins'
+
+C:\Program Files\Jenkins
+λ

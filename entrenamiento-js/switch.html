@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página DEMO</title>
+  </head>
+  <body>
+    <h1>Demo de la página</h1>
+    <h2>Demo de la Página 2</h2>
+  </body>
+</html>
+<script>
+  const validarFruta = (fruta) => {
+    switch (fruta) {
+      case "Naranja":
+        alert("Costo de la Naranja es 20 pesos");
+        break;
+      case "Melon":
+        alert("Costo de la Naranja es 50 pesos");
+        break;
+      case "Piña":
+        alert("Costo de la Naranja es 45 pesos");
+        break;
+      default:
+        alert("No tenemos el Precio de la Fruta", fruta);
+        break;
+    }
+  };
+  let f = prompt("Escoge una fruta Naranja, Melon y Piña");
+  validarFruta(f);
+</script>

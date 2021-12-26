@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página DEMO</title>
+  </head>
+  <body>
+    <h1>Demo de la página</h1>
+    <h2>Demo de la Página 2</h2>
+  </body>
+</html>
+<script>
+  let frutas = ["Naranja", "Pera", "Melón", "Sandía"];
+
+  //   console.log("El número de elementos es: " + frutas.length);
+  //   console.log("Mostrar Pera: " + frutas[1]);
+
+  //   let datos = {
+  //     nom: "Pablo",
+  //     ap: "Urbano",
+  //     am: "Tineo",
+  //   };
+
+  //   console.log(datos);
+  frutas.forEach((elemento, indice, array) => {
+    // console.log("El elemento es: " + elemento);
+    // console.log("El indice es: " + indice);
+    // console.log("El elemento es: " + array);
+    console.log(elemento, indice);
+  });
+
+  // Agregar un elemento al final
+  let nuevoFinal = frutas.push("Piña");
+  let nuevoFinal2 = frutas.push("Fresa");
+
+  // Eliminar un elemento del final
+  // let eliminarUltimo = frutas.pop();
+
+  // Agregar al principio
+  let agregarPrincipio = frutas.unshift("Granada");
+
+  // Eliminar el princio
+  let eliminarPrincipio = frutas.shift();
+
+  // Encontrar elemento de una posición
+  let buscarElemento = frutas.indexOf("Fresa");
+  console.log("Elemento encontrado:", buscarElemento);
+
+  // Eliminar elemento por posición
+  let buscarNaranja = frutas.indexOf("Naranja");
+  let eliminarPos = frutas.splice(buscarNaranja, 1);
+  console.log("Esto es de frutas1:", frutas);
+
+  // Copiando todo el array a otro
+  let frutas2 = frutas.slice();
+  console.log("Esto es de frutas2:", frutas2);
+</script>

@@ -1,0 +1,7 @@
+// vuelve a los cambios de un commit anterior
+git checkout -- .
+git restore .
+
+
+// subir archivos por extension
+git add *.xlsx
